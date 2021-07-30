@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NPO法人子育てコンビニ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Googleフォント -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header id="page-top" class="p-bg">
+      <div class="container">
+        <div id="l-header" class="row p-header">
+          <!-- ロゴ画像 -->
+          <h1 id="home-logo" class="col-6 col-lg-3">
+            <a href=""
+              ><img src="assets/img/img-logo.png" alt="NPO法人子育てコンビニ"
+            /></a>
+          </h1>
+          <div class="col-2 offset-4 c-display--sm">
+            <!-- ハンバーガーボタン -->
+            <div class="c-burger-btn c-display--sm">
+              <span class="c-bar c-bar-top"></span>
+              <span class="c-bar c-bar-mid"></span>
+              <span class="c-bar c-bar-bottom"></span>
+            </div>
+          </div>
+          <!-- PC表示ナビゲーション -->
+          <div
+            id="nav__sub--wrapper"
+            class="col-lg-6 offset-lg-3 c-display--lg"
+          >
+            <div class="row">
+              <!-- PCサブナビゲーション -->
+              <ul id="nav__sub--pc" class="col row p-nav__list--pc">
+                <li class="col">
+                  <a href="activities" class="p-nav__sub-item--pc c-font--s"
+                    ><i class="far fa-file-alt"></i>活動実績</a
+                  >
+                </li>
+                <li class="col">
+                  <a href="donation" class="p-nav__sub-item--pc c-font--s"
+                    ><i class="fas fa-hands"></i>ご寄付</a
+                  >
+                </li>
+                <li class="col">
+                  <a href="about#access" class="p-nav__sub-item--pc c-font--s"
+                    ><i class="fas fa-car"></i>アクセス</a
+                  >
+                </li>
+              </ul>
+              <!-- PCコンバージョン -->
+              <ul id="nav__cv--pc" class="col row p-nav__list--pc">
+                <li class="col">
+                  <a href="tel:0422-41-7021" class="c-font-bold is-tel"
+                    ><i class="fas fa-phone-alt c-font--xs"></i>0422-41-7021</a
+                  >
+                </li>
+                <li class="col">
+                  <a href="contact" class="is-contact"
+                    ><i class="far fa-envelope"></i>お問い合わせ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- PCメインナビゲーション -->
+        <div id="l-header__pc-nav" class="c-display--lg">
+          <nav class="">
+            <div class="container">
+              <ul class="row p-nav__list--pc">
+                <li class="col-2">
+                  <a href="" class="p-nav__pc-item is-current"
+                    ><div>
+                      <img
+                        src="assets/img/nav-icon/icon-home.png"
+                        alt="ホームに戻る"
+                        class="p-nav__img--icon"
+                      />
+                    </div>
+                    ホーム</a
+                  >
+                </li>
+                <li class="col-2">
+                  <a href="about" class="p-nav__pc-item"
+                    ><div>
+                      <img
+                        src="assets/img/nav-icon/icon-about.png"
+                        alt="子育てコンビニについてのページへ移動"
+                        class="p-nav__img--icon"
+                      />
+                    </div>
+                    子育てコンビニについて</a
+                  >
+                </li>
+                <li class="col-2">
+                  <a href="home-start" class="p-nav__pc-item"
+                    ><div>
+                      <img
+                        src="assets/img/nav-icon/icon-home-start.png"
+                        alt="ホームスタート・みたかのページへ移動"
+                        class="p-nav__img--icon"
+                      />
+                    </div>
+                    ホームスタート・みたか</a
+                  >
+                </li>
+                <li class="col-2">
+                  <a href="event" class="p-nav__pc-item"
+                    ><div>
+                      <img
+                        src="assets/img/nav-icon/icon-event.png"
+                        alt="イベント情報のページへ移動"
+                        class="p-nav__img--icon"
+                      />
+                    </div>
+                    イベント情報</a
+                  >
+                </li>
+                <li class="col-2">
+                  <a href="member" class="p-nav__pc-item"
+                    ><div>
+                      <img
+                        src="assets/img/nav-icon/icon-member.png"
+                        alt="会員募集のページへ移動"
+                        class="p-nav__img--icon"
+                      />
+                    </div>
+                    会員募集</a
+                  >
+                </li>
+                <li class="col-2">
+                  <a href="blog" class="p-nav__pc-item"
+                    ><div>
+                      <img
+                        src="assets/img/nav-icon/icon-blog.png"
+                        alt="ブログのページへ移動"
+                        class="p-nav__img--icon"
+                      />
+                    </div>
+                    ブログ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- SP表示ナビゲーション -->
+      <div id="l-nav__wrapper" class="c-nav__wrapper p-bg">
+        <nav class="c-nav__header">
+          <ul id="nav__cv--sp" class="">
+            <li class="">
+              <a href="tel:0422-41-7021"><i class="fas fa-phone-alt"></i></a>
+            </li>
+            <li class="">
+              <a href="contact" class=""
+                ><i class="far fa-envelope"></i>お問い合わせ</a
+              >
+            </li>
+          </ul>
+          <div class="container">
+            <ul class="p-nav__list--sp">
+              <li class="c-nav__item">
+                <a href="home-start"
+                  ><i class="fas fa-arrow-circle-right"></i
+                  >ホームスタート・みたか</a
+                >
+              </li>
+              <li class="c-nav__item">
+                <a href="about">子育てコンビニについて</a>
+              </li>
+              <li class="c-nav__item"><a href="about#access">アクセス</a></li>
+              <li class="c-nav__item"><a href="activities">活動実績</a></li>
+            </ul>
+            <ul class="p-nav__list--sp">
+              <li class="c-nav__item"><a href="event">イベント情報</a></li>
+              <li class="c-nav__item"><a href="info">インフォメーション</a></li>
+              <li class="c-nav__item">
+                <a href="magazine">子育てコンビニ通信</a>
+              </li>
+              <li class="c-nav__item">
+                <ul class="row p-nav__list--sp row">
+                  <li class="c-nav__item col"><a href="blog">ブログ</a></li>
+                  <li class="c-nav__item col"><a href="column">コラム</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="p-nav__list--sp row">
+              <li class="c-nav__item col"><a href="member">会員募集</a></li>
+              <li class="c-nav__item col">
+                <a href="member#staff">スタッフ募集</a>
+              </li>
+            </ul>
+            <ul class="p-nav__list--sp row">
+              <li class="c-nav__item col"><a href="donation">ご寄付</a></li>
+              <li class="c-nav__item col"><a href="report">事業報告</a></li>
+            </ul>
+            <ul class="p-nav__list--sp">
+              <li class="c-nav__item sub">
+                <a href="my-number">法人番号（マイナンバー）について</a>
+              </li>
+              <li class="c-nav__item sub">
+                <a href="privacy-policy">プライバシーポリシー</a>
+              </li>
+              <li class="c-nav__item sub">
+                <a href="scta">特定商取引法に基づく表示</a>
+              </li>
+            </ul>
+            <ul class="row p-nav__list--sp p-nav__sns--sp">
+              <li class="col-4">
+                <!-- Twitter -->
+                <a
+                  href="https://twitter.com/conzelchan"
+                  target="_blank"
+                  rel="noopener"
+                  class=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="col-4">
+                <!-- Facebook -->
+                <a
+                  href="https://www.facebook.com/kosodate.conveni"
+                  target="_blank"
+                  rel="noopener"
+                  class=""
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li class="col-4">
+                <!-- Line -->
+                <div
+                  class="line-it-button"
+                  data-lang="ja"
+                  data-type="friend"
+                  data-lineid="@573wipdp"
+                  style="display: none"
+                ></div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- メインビジュアル -->
+      <!-- ホームスタート・みたかバナー -->
+      <!-- インフォ＋子育てコンビニ通信 -->
+      <section id="" class="l-section p-bg--white">
+        <div class="container">
+          <div class="row">
+            <!-- インフォメーション -->
+            <section id="home-info" class="col-lg-7">
+              <div class="container">
+                <h3 class="">インフォメーション</h3>
+                <div class="">
+                  <ul class="c-artticle-list">
+                    <li class="">
+                      <a href="" class="">
+                        <div class="">
+                          <time class="">2021.09.12</time>
+                          <h4>
+                            「赤ちゃんといっしょにおしゃべりしませんか？」
+                          </h4>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="" class="">
+                        <div class="">
+                          <time class="">2021.09.07</time>
+                          <h4>「Bloom〜生まれたのは私 ふれあい上映会」</h4>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="" class="">
+                        <div class="">
+                          <time class="">2021.09.01</time>
+                          <h4>ホームページをリニューアルしました。</h4>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="c-link-btn">
+                  <a href="" class="color--yellow">記事一覧へ</a>
+                </p>
+              </div>
+            </section>
+            <!-- 子育てコンビニ通信 -->
+            <section id="home-magazine" class="col-lg-5">
+              <h3 class="">子育てコンビニ通信</h3>
+              <div class="c-content-box">
+                <img src="" alt="" class="" />
+                <div class="">
+                  <p class="">
+                    最新号を市内各所にて配布中！<br />ぜひお手に取ってご覧ください。
+                  </p>
+                  <ul class="">
+                    <li class="">
+                      <p class="c-link-btn">
+                        <a href="" class="color--blue c-font--s"
+                          >最新号を読む</a
+                        >
+                      </p>
+                    </li>
+                    <li class="">
+                      <p class="c-link-btn">
+                        <a href="" class="color--blue c-font--s"
+                          >バックナンバーを読む</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                  <p class="">
+                    置いてくださる施設・店舗随時募集。次号以降の広告掲載希望の方も絶賛大募集しております！
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- 子育てコンビニについて -->
+      <section id="" class="l-section p-bg--base">
+        <div class="container">
+          <div class="c-content-box">
+            <h3 class="">子育てコンビニについて</h3>
+            <div class=""><img src="" alt="" /></div>
+            <p class="">
+              NPO法人子育てコンビニは<br />「孤独な育児からの解放」<br />「子育てを楽しめる環境づくり」をめざして子育て・子育て支援サークルの交流促進、子育て情報の提供、自己実現のたのめの社会参加支援など、総合的な子育ての支援をおこなっています。
+            </p>
+            <p class="c-link-btn">
+              <a href="" class="color--pink">さらにくわしく</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ホームスタート・みたか -->
+      <section id="" class="l-section p-bg--white">
+        <div class="container">
+          <div class="c-content-box">
+            <h3 class="">ホームスタート・みたか</h3>
+            <div class=""><img src="" alt="" /></div>
+            <p class="">
+              ホームスタートとは、未就学児が１人でもいる家庭に、研修を受けた地域の子育て経験者が訪問する「家庭訪問型子育て支援ボランティア」です。
+              NPO法人子育てコンビニは、三鷹市からの受託事業として「ホームスタートみたか」活動をおこなっています。
+            </p>
+            <p class="c-link-btn">
+              <a href="" class="color--yellow">さらにくわしく</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- イベント情報 -->
+      <section id="" class="l-section p-bg--base">
+        <div class="container">
+          <div class="">
+            <h3 class="">イベント情報</h3>
+            <p class="c-display--lg c-link-btn">
+              <a href="" class="color--blue c-font--s">イベント一覧へ</a>
+            </p>
+          </div>
+          <div class="row">
+            <!-- イベント情報リスト -->
+            <div id="" class="col-lg-6">
+              <ul class="">
+                <li class="c-content-box">
+                  <a href="">
+                    <div class="">
+                      <div class="">
+                        <p class="">募集中</p>
+                        <img src="" alt="" class="" />
+                      </div>
+                      <div class="">
+                        <h4>
+                          子育てコンビニひろば
+                          「赤ちゃんといっしょにおしゃべりしませんか♪」
+                        </h4>
+                        <p class="">
+                          日時：<time class="">2021年9月17日</time>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="c-content-box">
+                  <a href="">
+                    <div class="">
+                      <div class="">
+                        <p class="">満員御礼</p>
+                        <img src="" alt="" class="" />
+                      </div>
+                      <div class="">
+                        <h4>
+                          おやこでよってチョコっとあっぷるーむ
+                          「色で子育てを楽しく！〜色育（いろいく）で心も体もリフレッシュ〜」
+                        </h4>
+                        <p class="">
+                          日時：<time class="">2021年8月10日</time>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="c-content-box">
+                  <a href="">
+                    <div class="">
+                      <div class="">
+                        <p class="">終了しました</p>
+                        <img src="" alt="" class="" />
+                      </div>
+                      <div class="">
+                        <h4>
+                          おやこでよってチョコっとあっぷるーむ
+                          「”bloom〜生まれたのは私”ふれあい上映会」
+                        </h4>
+                        <p class="">
+                          日時：<time class="">2021年5月17日</time>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <p class="c-display--sm c-link-btn">
+                <a href="" class="color--blue">イベント一覧へ</a>
+              </p>
+            </div>
+            <!-- こよみ -->
+            <div id="home__event-calendar" class="col-lg-6">
+              <div class="c-content-box">
+                <h4 class="">こよみ</h4>
+                <div class="l-inner">
+                  <iframe
+                    src="https://calendar.google.com/calendar/embed?src=kosodate.conveni%40gmail.com&ctz=Asia%2FTokyo"
+                    style="border: 0"
+                    width=""
+                    height="400"
+                    frameborder="0"
+                    scrolling="no"
+                  ></iframe>
+                </div>
+                <p class="">
+                  NPO法人子育てコンビニが講師を担当する講座やワークショップ、物販、三鷹市で開催されるイベントなどをご紹介しています。<br />気になるイベントがありましたら、ぜひお気軽にお問い合わせください！
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 活動実績 -->
+      <section id="" class="l-section p-bg--base">
+        <div class="container">
+          <div class="c-content-box">
+            <h3 class="">活動実績</h3>
+            <p class="">
+              子育てコンビニでは、NPOや企業、行政などからの委託事業の他、会員（ほとんどが育児中のママ）自ら企画したイベント、講座などをやっています。あなたのやりたい事もきっとあるはず！また、あなたのやりたいことを形にすることもできますよ！
+            </p>
+            <p class="c-link-btn">
+              <a href="" class="color--pink">さらにくわしく</a>
+            </p>
+          </div>
+        </div>
+        <div id="" class="">
+          <ul class="">
+            <li class=""><img src="" alt="" /></li>
+            <li class=""><img src="" alt="" /></li>
+            <li class=""><img src="" alt="" /></li>
+            <li class=""><img src="" alt="" /></li>
+            <li class=""><img src="" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+      <!-- ブログ＋コラム -->
+      <section id="" class="l-section p-bg--white">
+        <div class="container">
+          <div class="row">
+            <!-- ブログ -->
+            <section id="" class="col-lg-6">
+              <div class="">
+                <h3 class="">ブログ</h3>
+                <p class="c-display--lg c-link-btn">
+                  <a href="" class="color--yellow c-font--s">ブログ一覧へ</a>
+                </p>
+              </div>
+              <div class="">
+                <ul class="">
+                  <li class="">
+                    <a href="">
+                      <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                          <time class="">2021.05.18</time>
+                          <h4 class="">
+                            総会が終わり新年度スタート＆三鷹の野菜情報
+                          </h4>
+                          <p class="">
+                            さわやかな初夏を楽しむ間もなく、西の方から梅雨入りのニュースが入ってきまし…
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="">
+                      <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                          <time class="">2021.04.26</time>
+                          <h4 class="">
+                            子育てコンビニ事務所より～さくら速報　最終
+                          </h4>
+                          <p class="">
+                            今年は、満開のさくらが本当にきれいでした。そのあと、さくら吹雪で、事務所前の…
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="">
+                      <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                          <time class="">2021.03.29</time>
+                          <h4 class="">
+                            子育てコンビニ事務所より　さくら速報③
+                          </h4>
+                          <p class="">
+                            昨日の雨で少し散ってしまったさくらですが、土曜日は満開で素晴らしかったです…
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <p class="c-display--sm c-link-btn">
+                <a href="" class="color--yellow">ブログ一覧へ</a>
+              </p>
+            </section>
+            <!-- コラム -->
+            <section id="" class="col-lg-6">
+              <div class="">
+                <h3 class="">コラム</h3>
+                <p class="c-display--lg c-link-btn">
+                  <a href="" class="color--blue c-font--s">コラム一覧へ</a>
+                </p>
+              </div>
+              <div class="">
+                <ul class="">
+                  <li class="">
+                    <a href="">
+                      <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                          <time class="">2021.07.01</time>
+                          <h4 class="">
+                            ママとパパのリレーエッセイ　第221回-Tさん
+                          </h4>
+                          <p class="">
+                            ホームスタートのビジター養成講座がご縁でバトンを受け取りました、Tと申します。…
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="">
+                      <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                          <time class="">2021.06.01</time>
+                          <h4 class="">
+                            Nanaの一口エッセイ～力を抜いて、ゆったりと・・・season2　第15回
+                          </h4>
+                          <p class="">
+                            ◆自粛生活が長引いていますが・・・
+                            新緑の季節もあっという間に過ぎ去り、青…
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="">
+                      <div class="">
+                        <img src="" alt="" />
+                        <div class="">
+                          <time class="">2021.06.01</time>
+                          <h4 class="">
+                            ママとパパのリレーエッセイ第220回- ニシミさん
+                          </h4>
+                          <p class="">
+                            昨年ホームスタートを通して子育てコンビニの会員となり、今回リレーエッセイのバト…
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <p class="c-display--sm c-link-btn">
+                <a href="" class="color--blue">コラム一覧へ</a>
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- 会員募集＋ご寄付 -->
+      <div class="container-fluid p-bg">
+        <div class="row">
+          <!-- 会員募集 -->
+          <section id="" class="l-section col-lg-6">
+            <div class="l-md-container">
+              <div class="c-content-box">
+                <h3 class="">会員募集</h3>
+                <p class="">
+                  NPO法人子育てコンビニは、子育てコンビニの<br />活動に賛同していただける会員を募集中です。<br />個人会員の方には三鷹市民協働ネットワーク法人会員特典、三鷹産業プラザi-club会員としての特典がございます。
+                </p>
+                <p class="c-link-btn">
+                  <a href="" class="color--pink">さらにくわしく</a>
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- ご寄付 -->
+          <section id="" class="l-section col-lg-6">
+            <div class="l-md-container">
+              <div class="c-content-box">
+                <h3 class="">ご寄付</h3>
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam provident debitis consectetur cumque esse sit
+                  laboriosam porro nobis tenetur distinctio, est natus eos
+                  perspiciatis totam accusamus ab? Quaerat, repellat quas.
+                </p>
+                <p class="c-link-btn">
+                  <a href="" class="color--yellow">さらにくわしく</a>
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- 法人会員様 -->
+      <section id="" class="l-section p-bg--white">
+        <div class="container">
+          <h3 class="">法人会員様</h3>
+          <p class="">
+            NPO法人子育てコンビニの趣旨に賛同し、会員となってくださっている法人様です。<br />NPO法人としての活動を継続できるのは、協賛いただく皆様のご協力のおかげです。法人会員様のご協力に感謝いたします。
+          </p>
+          <ul class="">
+            <li class="">
+              <a href="">
+                <img src="" alt="" />
+                <p class=""></p>
+              </a>
+            </li>
+            <li class="">
+              <a href="">
+                <img src="" alt="" />
+                <p class=""></p>
+              </a>
+            </li>
+            <li class="">
+              <a href="">
+                <img src="" alt="" />
+                <p class=""></p>
+              </a>
+            </li>
+            <li class="">
+              <a href="">
+                <img src="" alt="" />
+                <p class=""></p>
+              </a>
+            </li>
+            <li class="">
+              <a href="">
+                <img src="" alt="" />
+                <p class=""></p>
+              </a>
+            </li>
+            <li class="">
+              <a href="">
+                <img src="" alt="" />
+                <p class=""></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- お問い合わせ -->
+      <section id="" class="l-section p-bg--base">
+        <div class="container">
+          <div class="c-content-box">
+            <div class="row">
+              <h3 class="col-lg-6">お問い合わせ</h3>
+              <p class="col-lg-6">
+                子育てコンビニの利用や見学・取材、その他ご相談は<br />お電話、もしくはWEBでお問い合わせください。
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <h4 class="">お電話でのお問い合わせ</h4>
+                <p class="">0422-41-7021</p>
+                <p class="">10:00-15:00（土・日・祝日除く）</p>
+              </div>
+              <div class="col-lg-6">
+                <h4 class="">WEBでのお問い合わせ</h4>
+                <a href="contact" class="">お問い合わせフォームへ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- リンク -->
+      <section id="" class="l-section p-bg--white">
+        <div class="container">
+          <h3 class="">リンク</h3>
+          <p class="">
+            三鷹市の地域に根づいた活動をされている法人・団体をご紹介いたします。
+          </p>
+          <div class="">
+            <ul class="">
+              <li class="">
+                <a href="">
+                  <img src="" alt="" class="" />
+                  <p class=""></p>
+                </a>
+              </li>
+              <li class="">
+                <a href="">
+                  <img src="" alt="" class="" />
+                  <p class=""></p>
+                </a>
+              </li>
+              <li class="">
+                <a href="">
+                  <img src="" alt="" class="" />
+                  <p class=""></p>
+                </a>
+              </li>
+              <li class="">
+                <a href="">
+                  <img src="" alt="" class="" />
+                  <p class=""></p>
+                </a>
+              </li>
+              <li class="">
+                <a href="">
+                  <img src="" alt="" class="" />
+                  <p class=""></p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+      <!-- フッターナビゲーション -->
+      <section id="" class="l-section c-display--lg p-bg--blue">
+        <div class="container">
+          <ul class="row">
+            <li class="col-lg-2"><a href="">ホーム</a></li>
+            <li class="col-lg-3">
+              <ul class="">
+                <li class=""><a href="">ホームスタート・みたか</a></li>
+                <li class=""><a href="">子育てコンビニについて</a></li>
+                <li class=""><a href="">アクセス</a></li>
+                <li class=""><a href="">活動実績</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-3">
+              <ul class="">
+                <li class=""><a href="">イベント情報</a></li>
+                <li class=""><a href="">インフォメーション</a></li>
+                <li class=""><a href="">子育てコンビニ通信</a></li>
+                <li class=""><a href="">ブログ</a></li>
+                <li class=""><a href="">コラム</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2">
+              <ul class="">
+                <li class=""><a href="">会員募集</a></li>
+                <li class=""><a href="">スタッフ募集</a></li>
+                <li class=""><a href="">ご寄付</a></li>
+              </ul>
+            </li>
+            <li class="col-lg-2">
+              <ul class="">
+                <li class=""><a href="">お問い合わせ</a></li>
+                <li class=""><a href="">見学・取材</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 基本情報 -->
+      <section id="" class="l-section p-bg--white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="">特定非営利活動法人子育てコンビニ</h3>
+              <dl class="">
+                <dt class="">住所</dt>
+                <dd class="">
+                  〒181-0012<br />東京都三鷹市上連雀8-4-1ロマネスク2F
+                </dd>
+                <dt class="">Tel&Fax</dt>
+                <dd class=""><a href="tel:0422-41-7021">0422-41-7021</a></dd>
+              </dl>
+              <div class="">
+                <ul class="row">
+                  <li class="col-3"><a href="">お問い合わせ</a></li>
+                  <li class="col-3">
+                    <a
+                      href="https://goo.gl/maps/tvSvuK4UjU5Ra5vB7"
+                      target="_blank"
+                      rel="noopener"
+                      >地図</a
+                    >
+                  </li>
+                </ul>
+                <!-- SNS -->
+                <div id="" class="">
+                  <ul class="row">
+                    <li class="col-3">
+                      <!-- Twitter -->
+                      <a
+                        href="https://twitter.com/conzelchan"
+                        target="_blank"
+                        rel="noopener"
+                        class=""
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li class="col-3">
+                      <!-- Facebook -->
+                      <a
+                        href="https://www.facebook.com/kosodate.conveni"
+                        target="_blank"
+                        rel="noopener"
+                        class=""
+                        ><i class="fab fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li class="col-3">
+                      <!-- Line -->
+                      <div
+                        class="line-it-button"
+                        data-lang="ja"
+                        data-type="friend"
+                        data-lineid="@573wipdp"
+                        style="display: none"
+                      ></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="c-display--lg">
+                <!-- Facebook Timeline -->
+                <div
+                  class="fb-page"
+                  data-href="https://www.facebook.com/kosodate.conveni"
+                  data-tabs="timeline"
+                  data-width=""
+                  data-height="400"
+                  data-small-header="true"
+                  data-adapt-container-width="true"
+                  data-hide-cover="false"
+                  data-show-facepile="true"
+                >
+                  <blockquote
+                    cite="https://www.facebook.com/kosodate.conveni"
+                    class="fb-xfbml-parse-ignore"
+                  >
+                    <a href="https://www.facebook.com/kosodate.conveni"
+                      >特定非営利活動法人子育てコンビニ</a
+                    >
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer__sub-nav" class="l-section p-bg--blue l-footer">
+        <div class="container">
+          <div class="row">
+            <!-- フッターサブナビゲーション -->
+            <div class="c-display--lg col-lg-8">
+              <ul class="row">
+                <li class="col-lg-2"><a href="">事業報告</a></li>
+                <li class="col-lg-4">
+                  <a href="">法人番号（マイナンバー）について</a>
+                </li>
+                <li class="col-lg-3"><a href="">プライバシーポリシー</a></li>
+                <li class="col-lg-3">
+                  <a href="">特定商取引法に基づく表示</a>
+                </li>
+              </ul>
+            </div>
+            <!-- コピーライト -->
+            <address class="col-lg-4">
+              &copy;&nbsp;特定非営利活動法人子育てコンビニ
+            </address>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <!-- script -->
+    <script src="assets/js/script.js" async="async"></script>
+    <!-- script-fotawesome -->
+    <script
+      src="https://kit.fontawesome.com/17e102471c.js"
+      crossorigin="anonymous"
+    ></script>
+    <div id="fb-root"></div>
+    <!-- script-Facebook -->
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v11.0"
+      nonce="FYEf9BjU"
+    ></script>
+    <!-- script-Line -->
+    <script
+      src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+      async="async"
+      defer="defer"
+    ></script>
+  </body>
+</html>
